@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "kmbformatter",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/a-sarris/KMBFormatter.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "34f0180f6c6defe1c1a460142bbf1f422c5e102e"
+      }
+    }
+  ],
+  "version" : 2
+}

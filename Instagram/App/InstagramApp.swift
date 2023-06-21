@@ -10,9 +10,12 @@ import SwiftUI
 @main
 struct InstagramApp: App {
 	
+	@StateObject private var database = Database()
+	
 	var body: some Scene {
 		WindowGroup {
 			ContentView()
+				.environmentObject(database)
 		}
 	}
 	
