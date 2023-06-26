@@ -23,7 +23,7 @@ struct Profile: View {
 						ProfilePhotoButton()
 						ProfileOverview()
 					}
-						.padding(.top, 5)
+						.padding(.vertical, 10)
 						.padding(.horizontal)
 					
 					ProfileBio()

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ProfilePhotoButton: View {
 	
+	@State private var hasStoryPost = true
+	
 	var body: some View {
 		Button {
 			// Show photos library to post to story
@@ -18,6 +20,20 @@ struct ProfilePhotoButton: View {
 				.resizable()
 				.aspectRatio(contentMode: .fit)
 				.clipShape(Circle())
+				.overlay {
+					if hasStoryPost {
+						Circle()
+							.stroke(
+								.linearGradient(
+									colors: [.purple, .pink, .yellow],
+									startPoint: .topTrailing,
+									endPoint: .bottomLeading
+								),
+								lineWidth: 2
+							)
+							.scaleEffect(1.1)
+					}
+				}
 				.overlay {
 					Circle()
 						.stroke(Color.lightGray, lineWidth: 1.5)
