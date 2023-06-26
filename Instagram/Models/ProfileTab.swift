@@ -10,13 +10,11 @@ import CoreGraphics
 
 enum ProfileTab: Int, CaseIterable, Identifiable {
 	
+	var id: Int { self.rawValue }
+	
 	case posts
 	case reels
 	case tags
-	
-	var id: Int {
-		self.rawValue
-	}
 	
 	var imageIconName: String {
 		switch self {

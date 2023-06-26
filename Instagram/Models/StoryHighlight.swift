@@ -9,11 +9,8 @@ import Foundation
 
 struct StoryHighlight: Identifiable {
 	
+	var id: Int { "\(highlightName)@\(imageName)".hashValue }
 	var highlightName: String
 	var imageName: String
-	
-	var id: Int {
-		"\(highlightName)@\(imageName)".hashValue
-	}
 	
 }

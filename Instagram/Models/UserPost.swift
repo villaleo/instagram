@@ -9,16 +9,11 @@ import Foundation
 
 struct UserPost: Identifiable, Hashable {
 	
+	var id: Int { "\(imageName).\(numLikes)@\(caption ?? "")".hashValue }
 	var locationName: String? = nil
 	var imageName: String
 	var usersLiked: [UserProfile.Username] = []
-	var numLikes: Int {
-		usersLiked.count
-	}
+	var numLikes: Int { usersLiked.count }
 	var caption: String? = nil
-	
-	var id: Int {
-		imageName.hashValue
-	}
 	
 }

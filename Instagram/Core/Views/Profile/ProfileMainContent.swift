@@ -11,8 +11,6 @@ struct ProfileMainContent: View {
 	
 	@State private var selectedTab = ProfileTab.posts
 	
-	let postGridDimensions = CGFloat(UIScreen.main.bounds.width / 3)
-	
 	var body: some View {
 		VStack(spacing: 2.5) {
 			ProfileCSNavBar(selectedTab: $selectedTab)

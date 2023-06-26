@@ -9,15 +9,13 @@ import Foundation
 
 enum ScreenTab: Identifiable, Hashable, CaseIterable {
 	
+	var id: Int { self.hashValue }
+	
 	case home
 	case search
 	case create
 	case reels
 	case profile
-	
-	var id: Int {
-		self.hashValue
-	}
 	
 	var systemImageName: String {
 		switch self {

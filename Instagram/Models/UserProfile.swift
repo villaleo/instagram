@@ -37,18 +37,16 @@ struct UserProfile {
 	var highlights: [StoryHighlight]
 	var posts: [UserPost]
 	
-	static let `default`: Self = {
-		.init(
-			name: "John Appleseed",
-			username: .init("jappleseed"),
-			bio: "Hello, world!",
-			bioLink: "apple.com",
-			numPosts: 0,
-			numFollowers: 0,
-			numFollowing: 0,
-			highlights: [],
-			posts: []
-		)
-	}()
+	static let `default`: Self = .init(
+		name: "John Appleseed",
+		username: .init("jappleseed"),
+		bio: "Hello, world!",
+		bioLink: "apple.com",
+		numPosts: 0,
+		numFollowers: 0,
+		numFollowing: 0,
+		highlights: [],
+		posts: []
+	)
 	
 }
