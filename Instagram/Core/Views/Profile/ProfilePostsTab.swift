@@ -11,33 +11,30 @@ struct ProfilePostsTab: View {
 	
 	@EnvironmentObject var database: Database
 	
-	let postGridDimensions = CGFloat(UIScreen.main.bounds.width / 3)
+	private let columns = [
+		GridItem(.flexible(), spacing: 2.5),
+		GridItem(.flexible(), spacing: 2.5),
+		GridItem(.flexible(), spacing: 2.5)
+	]
 	
 	var body: some View {
-		HStack {
-			Grid(horizontalSpacing: 2.5, verticalSpacing: 2.5) {
-				ForEach(database.userProfile.posts.into3x3(), id: \.self) { row in
-					GridRow {
-						ForEach(row) { cell in
-							Button {
-								// View post
-							} label: {
-								Color.clear
-									.aspectRatio(1, contentMode: .fit)
-									.overlay(
-										Image(cell.imageName)
-											.resizable()
-											.scaledToFill()
-									)
-									.clipShape(Rectangle())
-									.frame(width: postGridDimensions - 2.5, height: postGridDimensions - 2.5)
-							}
+		LazyVGrid(columns: columns, spacing: 2.5) {
+			ForEach(database.userProfile.posts) { post in
+				Button {
+					// View post
+				} label: {
+					Color.clear
+						.aspectRatio(1, contentMode: .fit)
+						.overlay {
+							Image(post.imageName)
+								.resizable()
+								.scaledToFill()
 						}
-					}
+						.clipShape(Rectangle())
 				}
+
 			}
 		}
-		
 	}
 	
 }
