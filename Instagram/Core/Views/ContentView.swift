@@ -7,18 +7,73 @@
 
 import SwiftUI
 
+// MARK: - ContentView
+
+/// Main view of the App. Handles which tabs to display based on selected screen tab.
 struct ContentView: View {
+	
+	@State private var selectedScreenTab = ScreenTab.profile
+	private var screenNavBarOffset: CGFloat { (UIScreen.main.bounds.height / 2) - 70 }
 		
 	var body: some View {
-		Profile()
+		NavigationStack {
+			ZStack {
+				switch selectedScreenTab {
+				case .home:
+					EmptyView()
+				case .search:
+					EmptyView()
+				case .create:
+					EmptyView()
+				case .reels:
+					EmptyView()
+				case .profile:
+					Profile()
+				}
+				screenNavBar
+					.offset(y: screenNavBarOffset)
+			}
+		}
+	}
+	
+	/// Bottom navigation bar for the App. Switches content based on selected tab.
+	var screenNavBar: some View {
+		HStack {
+			ForEach(ScreenTab.allCases) { tab in
+				Spacer()
+				Button {
+					withAnimation(.spring()) {
+						selectedScreenTab = tab
+					}
+				} label: {
+					Image(systemName: ScreenTab.imageName(for: tab, fill: tab == selectedScreenTab))
+						.resizable()
+						.aspectRatio(contentMode: .fit)
+						.frame(width: 30, height: 30)
+						.fontWeight(.light)
+				}
+
+				Spacer()
+			}
+		}
+		.padding(.vertical)
+		.padding(.bottom)
+		.foregroundColor(.black)
+		.background(
+			Rectangle()
+				.fill(.white)
+				.shadow(radius: 1)
+		)
 	}
 	
 }
 
+// MARK: - Previews
+
 struct ContentView_Previews: PreviewProvider {
 	
 	static var previews: some View {
-		Profile()
+		ContentView()
 			.environmentObject(Database())
 	}
 	

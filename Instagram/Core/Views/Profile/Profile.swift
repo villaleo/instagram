@@ -12,6 +12,7 @@ import SwiftUI
 /// The navigation bar seen at the top of the view. Shows the username and two buttons: one to create a new
 /// post, and the other to view settings and other options.
 fileprivate struct NavHeader: ViewModifier {
+	
 	let username: UserProfile.Username
 	
 	func body(content: Content) -> some View {
@@ -73,47 +74,12 @@ struct Profile: View {
 	@State private var selectedProfileTab = ProfileTab.posts
 	@State private var selectedScreenTab = ScreenTab.profile
 	
-	private var screenNavBarOffset: CGFloat { (UIScreen.main.bounds.height / 2) - 70 }
-	
-	/// Bottom navigation bar for the App. Switches content based on selected tab.
-	var screenNavBar: some View {
-		HStack {
-			ForEach(ScreenTab.allCases) { tab in
-				Spacer()
-				Button {
-					withAnimation(.spring()) {
-						selectedScreenTab = tab
-					}
-				} label: {
-					Image(systemName: ScreenTab.imageName(for: tab, fill: tab == selectedScreenTab))
-						.resizable()
-						.aspectRatio(contentMode: .fit)
-						.frame(width: 30, height: 30)
-						.fontWeight(.light)
-				}
-
-				Spacer()
-			}
-		}
-		.padding(.vertical)
-		.padding(.bottom)
-		.background(
-			Rectangle()
-				.fill(.white)
-				.shadow(radius: 1)
-		)
-	}
-	
 	var body: some View {
 		NavigationStack {
-			ZStack {
-				content
-				screenNavBar
-					.offset(y: screenNavBarOffset)
-			}
-			.modifier(NavHeader(username: database.userProfile.username))
+			content
+				.modifier(NavHeader(username: database.userProfile.username))
+				.foregroundColor(.primaryText)
 		}
-		.foregroundColor(.primaryText)
 	}
 	
 	/// Main content of the Profile view.
