@@ -14,19 +14,19 @@ struct ProfileOverview: View {
 	var body: some View {
 		HStack(spacing: 30) {
 			VStack {
-				Text(database.userProfile.numPosts.truncate())
+				Text(database.current.numPosts.truncate())
 					.bold()
 				Text("Posts")
 					.font(.caption)
 			}
 			VStack {
-				Text(database.userProfile.numFollowers.truncate())
+				Text(database.current.numFollowers.truncate())
 					.bold()
 				Text("Followers")
 					.font(.caption)
 			}
 			VStack {
-				Text(database.userProfile.numFollowing.truncate())
+				Text(database.current.numFollowing.truncate())
 					.bold()
 				Text("Following")
 					.font(.caption)

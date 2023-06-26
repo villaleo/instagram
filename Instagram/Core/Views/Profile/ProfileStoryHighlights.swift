@@ -14,7 +14,7 @@ struct ProfileStoryHighlights: View {
 	var body: some View {
 		ScrollView(.horizontal) {
 			HStack(spacing: 20) {
-				ForEach(database.userProfile.highlights) { highlight in
+				ForEach(database.current.highlights) { highlight in
 					VStack {
 						Button {
 							// Story highlight

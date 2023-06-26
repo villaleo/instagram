@@ -21,10 +21,10 @@ struct ProfileBio: View {
 	var body: some View {
 		HStack {
 			VStack(alignment: .leading, spacing: 3) {
-				Text(database.userProfile.name)
+				Text(database.current.name)
 					.bold()
 					.font(.subheadline)
-				Text(database.userProfile.bio)
+				Text(database.current.bio)
 					.font(.footnote)
 				
 				HStack {
@@ -47,7 +47,7 @@ struct ProfileBio: View {
 					Button {
 						// Link
 					} label: {
-						Text(database.userProfile.bioLink)
+						Text(database.current.bioLink ?? "")
 							.font(.footnote)
 					}
 				}

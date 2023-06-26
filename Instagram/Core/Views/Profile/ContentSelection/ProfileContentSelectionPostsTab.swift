@@ -19,7 +19,7 @@ struct ProfileCSPostsTab: View {
 	
 	var body: some View {
 		LazyVGrid(columns: columns, spacing: 2.5) {
-			ForEach(database.userProfile.posts) { post in
+			ForEach(database.current.posts) { post in
 				Button {
 					// View post
 				} label: {

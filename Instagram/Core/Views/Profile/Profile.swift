@@ -13,7 +13,7 @@ import SwiftUI
 /// post, and the other to view settings and other options.
 fileprivate struct NavHeader: ViewModifier {
 	
-	let username: UserProfile.Username
+	let username: String
 	
 	func body(content: Content) -> some View {
 		content
@@ -28,7 +28,7 @@ fileprivate struct NavHeader: ViewModifier {
 								.aspectRatio(contentMode: .fit)
 								.frame(width: 15, height: 15)
 								.fontWeight(.semibold)
-							Text(username.description)
+							Text(username)
 								.bold()
 								.font(.title2)
 							Image(systemName: "chevron.down")
@@ -76,7 +76,7 @@ struct Profile: View {
 	var body: some View {
 		NavigationStack {
 			content
-				.modifier(NavHeader(username: database.userProfile.username))
+				.modifier(NavHeader(username: database.current.username))
 				.foregroundColor(.primaryText)
 		}
 	}
@@ -112,7 +112,7 @@ struct Profile: View {
 				
 				ProfileStoryHighlights()
 					.scrollIndicators(.hidden)
-					.scrollDisabled(database.userProfile.highlights.count < 3)
+					.scrollDisabled(database.current.highlights.count < 3)
 					.padding(.horizontal)
 					.padding(.top, 10)
 
