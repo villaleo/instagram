@@ -72,7 +72,6 @@ struct Profile: View {
 	
 	@EnvironmentObject var database: Database
 	@State private var selectedProfileTab = ProfileTab.posts
-	@State private var selectedScreenTab = ScreenTab.profile
 	
 	var body: some View {
 		NavigationStack {
