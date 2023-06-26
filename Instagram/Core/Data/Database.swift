@@ -12,7 +12,7 @@ class Database: ObservableObject {
 	@Published var userProfile: UserProfile = .init(
 		name: "Leonardo Villalobos",
 		username: .init("villaleobos"),
-		bio: "Hey there! I'm a software engineer living in California 🐻. #pride ",
+		bio: "Hey there! I'm a software engineer living in California 🐻.",
 		bioLink: "github.com/villaleo",
 		numPosts: 122,
 		numFollowers: 23587,
