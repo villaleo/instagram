@@ -22,10 +22,8 @@ struct ProfileMainContent: View {
 				ProfilePostsTab()
 			case .reels:
 				ProfileReelsTab()
-					.padding(.top, 85)
 			case .tags:
 				ProfileTagsTab()
-					.padding(.top, 85)
 			}
 		}
 	}

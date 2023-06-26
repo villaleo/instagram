@@ -15,7 +15,7 @@ struct ProfileTagsTab: View {
 		VStack {
 			
 			if !hasAnyTags {
-				Group {
+				VStack {
 					Image(systemName: "tag.fill")
 						.resizable()
 						.aspectRatio(contentMode: .fit)
@@ -30,6 +30,7 @@ struct ProfileTagsTab: View {
 						.padding(.top, 3)
 				}
 				.foregroundColor(.lightGray)
+				.padding(.vertical, 50)
 			}
 			
 			else {

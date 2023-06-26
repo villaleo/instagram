@@ -15,7 +15,7 @@ struct ProfileReelsTab: View {
 		VStack {
 			
 			if !hasPostedReels {
-				Group {
+				VStack {
 					Image(systemName: "play.square.fill")
 						.resizable()
 						.aspectRatio(contentMode: .fit)
@@ -30,6 +30,7 @@ struct ProfileReelsTab: View {
 						.padding(.top, 3)
 				}
 				.foregroundColor(.lightGray)
+				.padding(.vertical, 50)
 			}
 			
 			else {
