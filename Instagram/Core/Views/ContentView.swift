@@ -20,13 +20,13 @@ struct ContentView: View {
 			ZStack {
 				switch selectedScreenTab {
 				case .home:
-					EmptyView()
+					Home()
 				case .search:
-					EmptyView()
+					Search()
 				case .create:
-					EmptyView()
+					Create()
 				case .reels:
-					EmptyView()
+					Reels()
 				case .profile:
 					Profile()
 				}

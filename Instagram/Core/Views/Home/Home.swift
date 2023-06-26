@@ -10,8 +10,20 @@ import SwiftUI
 struct Home: View {
 
   var body: some View {
-    Text("Hello, World!")
+		NavigationStack {
+			content
+				.foregroundColor(.primaryText)
+				.toolbar {
+					ToolbarItem(placement: .navigationBarLeading) {
+						Text("")
+					}
+				}
+		}
   }
+	
+	var content: some View {
+		Text("Hello, World!")
+	}
 
 }
 

@@ -9,9 +9,21 @@ import SwiftUI
 
 struct Search: View {
 
-  var body: some View {
-    Text("Hello, World!")
-  }
+	var body: some View {
+		NavigationStack {
+			content
+				.foregroundColor(.primaryText)
+				.toolbar {
+					ToolbarItem(placement: .navigationBarLeading) {
+						Text("")
+					}
+				}
+		}
+	}
+	
+	var content: some View {
+		Text("Hello, World!")
+	}
 
 }
 
