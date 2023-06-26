@@ -1,5 +1,5 @@
 //
-//  ProfileTabBar.swift
+//  ProfileContentSelectionNavBar.swift
 //  Instagram
 //
 //  Created by Leonardo Villalobos on 6/14/23.
@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreGraphics
 
-struct ProfileTabBar: View {
+struct ProfileCSNavBar: View {
 	
 	@Binding var selectedTab: ProfileTab
 	@State private var tabIndicatorOffset: CGSize = .zero
@@ -50,7 +50,7 @@ struct ProfileTabBar: View {
 struct ProfileTabBar_Previews: PreviewProvider {
 	
 	static var previews: some View {
-		ProfileTabBar(selectedTab: .constant(.posts))
+		ProfileCSNavBar(selectedTab: .constant(.posts))
 	}
 	
 }

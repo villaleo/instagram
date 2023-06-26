@@ -15,15 +15,15 @@ struct ProfileMainContent: View {
 	
 	var body: some View {
 		VStack(spacing: 2.5) {
-			ProfileTabBar(selectedTab: $selectedTab)
+			ProfileCSNavBar(selectedTab: $selectedTab)
 			
 			switch selectedTab {
 			case .posts:
-				ProfilePostsTab()
+				ProfileCSPostsTab()
 			case .reels:
-				ProfileReelsTab()
+				ProfileCSReelsTab()
 			case .tags:
-				ProfileTagsTab()
+				ProfileCSTagsTab()
 			}
 		}
 	}

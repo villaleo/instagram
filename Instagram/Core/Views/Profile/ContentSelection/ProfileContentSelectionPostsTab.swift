@@ -1,5 +1,5 @@
 //
-//  ProfilePostsTab.swift
+//  ProfileContentSelectionPostsTab.swift
 //  Instagram
 //
 //  Created by Leonardo Villalobos on 6/15/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ProfilePostsTab: View {
+struct ProfileCSPostsTab: View {
 	
 	@EnvironmentObject var database: Database
 	
@@ -32,7 +32,6 @@ struct ProfilePostsTab: View {
 						}
 						.clipShape(Rectangle())
 				}
-
 			}
 		}
 	}
@@ -43,7 +42,7 @@ struct ProfilePostsTab_Previews: PreviewProvider {
 	
 	static var previews: some View {
 		VStack {
-			ProfilePostsTab()
+			ProfileCSPostsTab()
 				.environmentObject(Database())
 		}
 	}

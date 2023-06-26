@@ -1,5 +1,5 @@
 //
-//  ProfileTagsTab.swift
+//  ProfileContentSelectionReelsTab.swift
 //  Instagram
 //
 //  Created by Leonardo Villalobos on 6/20/23.
@@ -7,25 +7,25 @@
 
 import SwiftUI
 
-struct ProfileTagsTab: View {
+struct ProfileCSReelsTab: View {
+	
+	@State private var hasPostedReels: Bool = false
 
-	@State private var hasAnyTags: Bool = false
-
-	var body: some View {
+  var body: some View {
 		VStack {
 			
-			if !hasAnyTags {
+			if !hasPostedReels {
 				VStack {
-					Image(systemName: "tag.fill")
+					Image(systemName: "play.square.fill")
 						.resizable()
 						.aspectRatio(contentMode: .fit)
 						.frame(width: 80, height: 80)
 						.shadow(radius: 2.5)
-					Text("No Tags")
+					Text("No Reels")
 						.font(.title3)
 						.bold()
 						.padding(.top, 5)
-					Text("Posts you've been tagged in will appear here.")
+					Text("Reels you post will be listed here.")
 						.font(.callout)
 						.padding(.top, 3)
 				}
@@ -38,15 +38,15 @@ struct ProfileTagsTab: View {
 			}
 			
 		}
-	}
+  }
 
 }
 
-struct ProfileTagsTabPreview: PreviewProvider {
+struct ProfileReelsTabPreview: PreviewProvider {
 
   static var previews: some View {
     VStack {
-      ProfileTagsTab()
+      ProfileCSReelsTab()
     }
   }
 
