@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct StoryHighlight: Identifiable {
+struct StoryHighlight: Identifiable, Codable {
 	
 	var id: Int { "\(highlightName)@\(imageName)".hashValue }
 	var highlightName: String

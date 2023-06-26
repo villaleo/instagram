@@ -1,0 +1,80 @@
+[
+	{
+		"name": "Ruben Villalobos",
+		"username": "rubenn.villa",
+		"bio": "Fabricator",
+		"bioLink": null,
+		"numPosts": 0,
+		"numFollowers": 133,
+		"numFollowing": 230,
+		"highlights": [],
+		"posts": []
+	},
+	{
+		"name": "Margarita",
+		"username": "_villalobosmaggie",
+		"bio": "Él es mi mundo 💗🌎",
+		"bioLink": null,
+		"numPosts": 0,
+		"numFollowers": 196,
+		"numFollowing": 142,
+		"highlights": [],
+		"posts": []
+	},
+	{
+		"name": "Leonardo Villalobos",
+		"username": "villaleobos",
+		"bio": "Hey there! I'm a software engineer living in California 🐻.",
+		"bioLink": "github.com/villaleo",
+		"numPosts": 5,
+		"numFollowers": 115,
+		"numFollowing": 99,
+		"highlights": [
+			{
+				"highlightName": "🌱",
+				"imageName": "NatureStoryThumbnail"
+			},
+			{
+				"highlightName": "☀️22",
+				"imageName": "Summer22StoryThumbnail"
+			}
+		],
+		"posts": [
+			{
+				"locationName": "Salinas Sports Complex",
+				"imageName": "Post18",
+				"usersLiked": [
+					"rubenn.villa",
+					"_villalobosmaggie"
+				],
+				"caption": "Graduation has been the best day of my life ❤️ I'm grateful for my friends and family for being very supportive and accepting me for who I am 🫶🏼 I love you all!"
+			},
+			{
+				"locationName": "California State University, Monterey Bay",
+				"imageName": "Post17",
+				"usersLiked": [
+					"_villalobosmaggie"
+				],
+				"caption": "It's ubelieveable that after 3 short years, I'm completely finished with school! 📚🧡 I had the opportunity to work with amazing people on an awesome project utilizing OpenAI 🧠 Next up: finding a job!"
+			},
+			{
+				"locationName": "Fort Ord",
+				"imageName": "Post16",
+				"usersLiked": [],
+				"caption": "The last time we hiked here together was when we all met in person for the first time 💚"
+			},
+			{
+				"locationName": "Alcatraz Federal Prison",
+				"imageName": "Post15",
+				"usersLiked": [],
+				"caption": "Alcatraz trip today 🥰"
+			},
+			{
+				"locationName": "Mission San Juan Bautista",
+				"imageName": "Post14",
+				"usersLiked": [],
+				"caption": "From when I went to San Juan Bautista ⛪️🧡"
+			}
+		]
+	}
+]

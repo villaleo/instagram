@@ -7,30 +7,12 @@
 
 import Foundation
 
-struct UserProfile {
-	
-	struct Username: Identifiable, Hashable, CustomStringConvertible {
-		
-		var username: String
-		
-		init(_ username: String) {
-			self.username = username
-		}
-		
-		var id: Int {
-			return username.hashValue
-		}
-		
-		var description: String {
-			return username
-		}
-		
-	}
+struct UserProfile: Codable {
 	
 	var name: String
-	var username: Username
+	var username: String
 	var bio: String
-	var bioLink: String
+	var bioLink: String?
 	var numPosts: Int64
 	var numFollowers: Int64
 	var numFollowing: Int64
