@@ -19,7 +19,7 @@ enum ScreenTab: Identifiable, Hashable, CaseIterable {
 		self.hashValue
 	}
 	
-	private var systemImageName: String {
+	var systemImageName: String {
 		switch self {
 		case .home:
 			return "house"
@@ -32,14 +32,6 @@ enum ScreenTab: Identifiable, Hashable, CaseIterable {
 		case .profile:
 			return "person.circle"
 		}
-	}
-	
-	static func imageName(for tab: Self, fill: Bool = false) -> String {
-		if tab == .search {
-			return tab.systemImageName
-		}
-		
-		return fill ? "\((tab.systemImageName)).fill" : (tab.systemImageName)
 	}
 	
 }

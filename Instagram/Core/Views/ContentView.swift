@@ -46,11 +46,12 @@ struct ContentView: View {
 						selectedScreenTab = tab
 					}
 				} label: {
-					Image(systemName: ScreenTab.imageName(for: tab, fill: tab == selectedScreenTab))
+					Image(systemName: tab.systemImageName)
 						.resizable()
 						.aspectRatio(contentMode: .fit)
-						.frame(width: 30, height: 30)
-						.fontWeight(.light)
+						.frame(width: 25, height: 25)
+						.fontWeight(tab == selectedScreenTab ? .semibold : .regular)
+						.scaleEffect(tab == selectedScreenTab ? 1.25 : 1)
 				}
 
 				Spacer()
