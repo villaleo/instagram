@@ -58,12 +58,12 @@ struct ContentView: View {
 			}
 		}
 		.padding(.vertical)
-		.padding(.bottom)
-		.foregroundColor(.black)
+		.padding(.bottom, 20)
+		.foregroundColor(.primaryText)
 		.background(
 			Rectangle()
-				.fill(.white)
-				.shadow(radius: 1)
+				.fill(Color.background)
+				.shadow(radius: 1.5)
 		)
 	}
 	
