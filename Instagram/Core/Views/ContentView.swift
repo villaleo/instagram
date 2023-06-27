@@ -28,7 +28,7 @@ struct ContentView: View {
 				case .reels:
 					Reels()
 				case .profile:
-					Profile()
+					ProfileView()
 				}
 				screenNavBar
 					.offset(y: screenNavBarOffset)

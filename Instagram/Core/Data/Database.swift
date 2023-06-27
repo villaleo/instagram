@@ -9,8 +9,8 @@ import Foundation
 
 class Database: ObservableObject {
 	
-	@Published var users: [UserProfile] = deserialize(from: "userData.json")
-	var current: UserProfile { users[2] }
+	@Published var users: [Profile] = deserialize(from: "userData.json")
+	var current: Profile { users[2] }
 	
 }
 
