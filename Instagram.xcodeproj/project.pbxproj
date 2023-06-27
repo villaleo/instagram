@@ -14,11 +14,10 @@
 		5207997C2A3913B5004173BD /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5207997B2A3913B5004173BD /* Profile.swift */; };
 		5207997F2A3918A6004173BD /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5207997E2A3918A6004173BD /* Color.swift */; };
 		520799852A392D89004173BD /* ProfilePhotoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520799842A392D89004173BD /* ProfilePhotoButton.swift */; };
-		520799872A393695004173BD /* ProfileOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520799862A393695004173BD /* ProfileOverview.swift */; };
 		520799892A39371E004173BD /* ProfileBio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520799882A39371E004173BD /* ProfileBio.swift */; };
 		5207998D2A3937BE004173BD /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5207998C2A3937BE004173BD /* UserProfile.swift */; };
 		520799902A393968004173BD /* KMBFormatter in Frameworks */ = {isa = PBXBuildFile; productRef = 5207998F2A393968004173BD /* KMBFormatter */; };
-		520799922A394AD3004173BD /* ProfileActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520799912A394AD3004173BD /* ProfileActionButton.swift */; };
+		520799922A394AD3004173BD /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520799912A394AD3004173BD /* ProfileHeader.swift */; };
 		520799952A394B43004173BD /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520799942A394B43004173BD /* Database.swift */; };
 		520799972A394FD4004173BD /* Int64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520799962A394FD4004173BD /* Int64.swift */; };
 		520799992A3964F6004173BD /* ProfileStoryHighlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520799982A3964F6004173BD /* ProfileStoryHighlights.swift */; };
@@ -47,10 +46,9 @@
 		5207997B2A3913B5004173BD /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		5207997E2A3918A6004173BD /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		520799842A392D89004173BD /* ProfilePhotoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoButton.swift; sourceTree = "<group>"; };
-		520799862A393695004173BD /* ProfileOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOverview.swift; sourceTree = "<group>"; };
 		520799882A39371E004173BD /* ProfileBio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBio.swift; sourceTree = "<group>"; };
 		5207998C2A3937BE004173BD /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
-		520799912A394AD3004173BD /* ProfileActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButton.swift; sourceTree = "<group>"; };
+		520799912A394AD3004173BD /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		520799942A394B43004173BD /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		520799962A394FD4004173BD /* Int64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int64.swift; sourceTree = "<group>"; };
 		520799982A3964F6004173BD /* ProfileStoryHighlights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStoryHighlights.swift; sourceTree = "<group>"; };
@@ -176,10 +174,9 @@
 			children = (
 				523072A12A4A15F700D59EED /* ContentSelection */,
 				5207997B2A3913B5004173BD /* Profile.swift */,
-				520799912A394AD3004173BD /* ProfileActionButton.swift */,
 				520799882A39371E004173BD /* ProfileBio.swift */,
+				520799912A394AD3004173BD /* ProfileHeader.swift */,
 				52743EAA2A41314D00C4430D /* ProfileMainContent.swift */,
-				520799862A393695004173BD /* ProfileOverview.swift */,
 				520799842A392D89004173BD /* ProfilePhotoButton.swift */,
 				520799982A3964F6004173BD /* ProfileStoryHighlights.swift */,
 			);
@@ -327,7 +324,7 @@
 				52326AB72A42A27000F36EF2 /* ProfileContentSelectionTagsTab.swift in Sources */,
 				520799952A394B43004173BD /* Database.swift in Sources */,
 				5230729E2A4A10E200D59EED /* Create.swift in Sources */,
-				520799922A394AD3004173BD /* ProfileActionButton.swift in Sources */,
+				520799922A394AD3004173BD /* ProfileHeader.swift in Sources */,
 				5208ABEF2A49F26500299F12 /* ScreenTab.swift in Sources */,
 				5207996B2A391227004173BD /* ContentView.swift in Sources */,
 				5207997F2A3918A6004173BD /* Color.swift in Sources */,
@@ -341,7 +338,6 @@
 				520799A32A3A197A004173BD /* ProfileContentSelectionNavBar.swift in Sources */,
 				520799992A3964F6004173BD /* ProfileStoryHighlights.swift in Sources */,
 				52743EAB2A41314D00C4430D /* ProfileMainContent.swift in Sources */,
-				520799872A393695004173BD /* ProfileOverview.swift in Sources */,
 				52326AB52A429E0400F36EF2 /* ProfileContentSelectionReelsTab.swift in Sources */,
 				523072A02A4A10ED00D59EED /* Reels.swift in Sources */,
 				5207998D2A3937BE004173BD /* UserProfile.swift in Sources */,

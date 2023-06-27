@@ -85,40 +85,11 @@ struct Profile: View {
 	var content: some View {
 		ScrollView {
 			VStack(spacing: 2.5) {
-				
-				HStack(spacing: 55) {
-					ProfilePhotoButton()
-					ProfileOverview()
-				}
-					.padding(.vertical, 10)
-					.padding(.horizontal)
-				
-				ProfileBio()
-					.padding(.horizontal)
-				
-				HStack {
-					ProfileActionButton(label: "Edit profile")
-					ProfileActionButton(label: "Share profile")
-					Button {
-						// Discover new people
-					} label: {
-						Image(systemName: "person.badge.plus")
-							.frame(width: 35, height: 35)
-							.background(Color.secondaryBackground)
-							.cornerRadius(10)
-					}
-				}
-				.padding(.horizontal)
-				
-				ProfileStoryHighlights()
-					.scrollIndicators(.hidden)
-					.scrollDisabled(database.current.highlights.count < 3)
-					.padding(.horizontal)
-					.padding(.top, 10)
+				ProfileHeader()
 
 				ProfileMainContent()
 					.padding(.vertical)
-				
+					
 				VStack {}
 					.padding(15)
 			}
