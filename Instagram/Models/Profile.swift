@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct Profile: Codable {
+struct Profile: Codable, Identifiable {
 	
+	var id: Int { "\(name)@\(username).\(numFollowers)".hashValue }
 	var name: String
 	var username: String
 	var bio: String
