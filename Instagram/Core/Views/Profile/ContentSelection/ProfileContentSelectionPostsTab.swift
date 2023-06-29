@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Shimmer
 
 struct ProfileCSPostsTab: View {
 	
@@ -26,9 +27,16 @@ struct ProfileCSPostsTab: View {
 					Color.clear
 						.aspectRatio(1, contentMode: .fit)
 						.overlay {
-							Image(post.imageName)
-								.resizable()
-								.scaledToFill()
+							AsyncImage(url: post.photoURL) { image in
+								image
+									.resizable()
+									.scaledToFill()
+							} placeholder: {
+								Rectangle()
+									.fill(Color(uiColor: .lightGray))
+									.shimmering(duration: 1)
+									.aspectRatio(contentMode: .fit)
+							}
 						}
 						.clipShape(Rectangle())
 				}

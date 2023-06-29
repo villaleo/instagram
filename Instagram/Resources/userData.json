@@ -9,7 +9,24 @@
 		"numFollowers": 133,
 		"numFollowing": 230,
 		"highlights": [],
-		"posts": []
+		"posts": [
+			{
+				"id": 5,
+				"locationName": "Santa Cruz Beach Boardwalk",
+				"photoUrlString": "https://res.cloudinary.com/dp6tamqbv/image/upload/v1688081472/users/0/posts/a1oi1kkwjrnsse8vzyqs.jpg",
+				"usersLiked": [],
+				"caption": "At the boardwalk 🏖️"
+			},
+			{
+				"id": 6,
+				"locationName": "Big Sur State Beach",
+				"photoUrlString": "https://res.cloudinary.com/dp6tamqbv/image/upload/v1688081455/users/0/posts/cxatkztgejjxkm2cbuwk.jpg",
+				"usersLiked": [
+					"villaleobos"
+				],
+				"caption": "☀️🌊"
+			}
+		]
 	},
 	{
 		"id": 1,
@@ -21,7 +38,15 @@
 		"numFollowers": 196,
 		"numFollowing": 142,
 		"highlights": [],
-		"posts": []
+		"posts": [
+			{
+				"id": 7,
+				"locationName": null,
+				"photoUrlString": "https://res.cloudinary.com/dp6tamqbv/image/upload/v1688081798/users/1/posts/ub02eadtgsrjjmdgag4l.jpg",
+				"usersLiked": [],
+				"caption": "With my brother! ❤️"
+			}
+		]
 	},
 	{
 		"id": 2,
@@ -48,42 +73,46 @@
 			{
 				"id": 0,
 				"locationName": "Salinas Sports Complex",
-				"imageName": "Post18",
+				"photoUrlString": "https://res.cloudinary.com/dp6tamqbv/image/upload/v1688082043/users/2/posts/qytyvfexkewyaoccy1dr.jpg",
 				"usersLiked": [
 					"rubenn.villa",
 					"_villalobosmaggie"
 				],
-				"caption": "Graduation has been the best day of my life ❤️ I'm grateful for my friends and family for being very supportive and accepting me for who I am 🫶🏼 I love you all!"
+				"caption": "Graduation has been the best day of my life ❤️"
 			},
 			{
 				"id": 1,
 				"locationName": "California State University, Monterey Bay",
-				"imageName": "Post17",
+				"photoUrlString": "https://res.cloudinary.com/dp6tamqbv/image/upload/v1688082866/users/2/posts/drletqsqymvbksnsaslv.jpg",
 				"usersLiked": [
 					"_villalobosmaggie"
 				],
-				"caption": "It's ubelieveable that after 3 short years, I'm completely finished with school! 📚🧡 I had the opportunity to work with amazing people on an awesome project utilizing OpenAI 🧠 Next up: finding a job!"
+				"caption": "After 3 short years, I'm completely finished with school! 📚🧡 Next up, finding a job.."
 			},
 			{
 				"id": 2,
-				"locationName": "Fort Ord",
-				"imageName": "Post16",
-				"usersLiked": [],
-				"caption": "The last time we hiked here together was when we all met in person for the first time 💚"
+				"locationName": null,
+				"photoUrlString": "https://res.cloudinary.com/dp6tamqbv/image/upload/v1688082267/users/2/posts/zf0d6ihqnxgvufgbamyv.jpg",
+				"usersLiked": [
+					"_villalobosmaggie"
+				],
+				"caption": "A limpiar el carro 💀"
 			},
 			{
 				"id": 3,
 				"locationName": "Alcatraz Federal Prison",
-				"imageName": "Post15",
+				"photoUrlString": "https://res.cloudinary.com/dp6tamqbv/image/upload/v1688082377/users/2/posts/m4qe9iq4ce0wqphm9s83.jpg",
 				"usersLiked": [],
 				"caption": "Alcatraz trip today 🥰"
 			},
 			{
 				"id": 4,
-				"locationName": "Mission San Juan Bautista",
-				"imageName": "Post14",
-				"usersLiked": [],
-				"caption": "From when I went to San Juan Bautista ⛪️🧡"
+				"locationName": "Nordstrom Mall, San Francisco",
+				"photoUrlString": "https://res.cloudinary.com/dp6tamqbv/image/upload/v1688082444/users/2/posts/bephnozadoxcixmcmxur.jpg",
+				"usersLiked": [
+					"rubenn.villa"
+				],
+				"caption": "When I bought the most expensive coat known to man 💀 Just to return that shit days later 😭"
 			}
 		]
 	}
