@@ -26,6 +26,7 @@
 		520799A32A3A197A004173BD /* ProfileContentSelectionNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520799A22A3A197A004173BD /* ProfileContentSelectionNavBar.swift */; };
 		520799A52A3A75E1004173BD /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520799A42A3A75E1004173BD /* Post.swift */; };
 		5208ABEF2A49F26500299F12 /* ScreenTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5208ABEE2A49F26500299F12 /* ScreenTab.swift */; };
+		5227CDFA2A4D36930043BD57 /* Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = 5227CDF92A4D36930043BD57 /* Shimmer */; };
 		5230729A2A4A10D000D59EED /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523072992A4A10D000D59EED /* Home.swift */; };
 		5230729C2A4A10DB00D59EED /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230729B2A4A10DB00D59EED /* Search.swift */; };
 		5230729E2A4A10E200D59EED /* Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230729D2A4A10E200D59EED /* Create.swift */; };
@@ -73,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5227CDFA2A4D36930043BD57 /* Shimmer in Frameworks */,
 				520799902A393968004173BD /* KMBFormatter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +262,7 @@
 			name = Instagram;
 			packageProductDependencies = (
 				5207998F2A393968004173BD /* KMBFormatter */,
+				5227CDF92A4D36930043BD57 /* Shimmer */,
 			);
 			productName = Instagram;
 			productReference = 520799652A391227004173BD /* Instagram.app */;
@@ -291,6 +294,7 @@
 			mainGroup = 5207995C2A391227004173BD;
 			packageReferences = (
 				5207998E2A393968004173BD /* XCRemoteSwiftPackageReference "KMBFormatter" */,
+				5227CDF82A4D36930043BD57 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */,
 			);
 			productRefGroup = 520799662A391227004173BD /* Products */;
 			projectDirPath = "";
@@ -553,6 +557,14 @@
 				kind = branch;
 			};
 		};
+		5227CDF82A4D36930043BD57 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/markiv/SwiftUI-Shimmer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -560,6 +572,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5207998E2A393968004173BD /* XCRemoteSwiftPackageReference "KMBFormatter" */;
 			productName = KMBFormatter;
+		};
+		5227CDF92A4D36930043BD57 /* Shimmer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5227CDF82A4D36930043BD57 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */;
+			productName = Shimmer;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
