@@ -9,7 +9,7 @@ import Foundation
 
 struct Post: Identifiable, Hashable, Codable {
 	
-	var id: Int { "\(imageName).\(numLikes)@\(caption ?? "")".hashValue }
+	var id: UInt
 	var locationName: String? = nil
 	var imageName: String
 	var usersLiked: [String] = []

@@ -9,7 +9,7 @@ import Foundation
 
 struct Profile: Codable, Identifiable {
 	
-	var id: Int { "\(name)@\(username).\(numFollowers)".hashValue }
+	var id: UInt
 	var name: String
 	var username: String
 	var bio: String
@@ -21,6 +21,7 @@ struct Profile: Codable, Identifiable {
 	var posts: [Post]
 	
 	static let `default`: Self = .init(
+		id: 0,
 		name: "John Appleseed",
 		username: .init("jappleseed"),
 		bio: "Hello, world!",

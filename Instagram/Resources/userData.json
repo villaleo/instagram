@@ -1,5 +1,6 @@
 [
 	{
+		"id": 0,
 		"name": "Ruben Villalobos",
 		"username": "rubenn.villa",
 		"bio": "Fabricator",
@@ -11,6 +12,7 @@
 		"posts": []
 	},
 	{
+		"id": 1,
 		"name": "Margarita",
 		"username": "_villalobosmaggie",
 		"bio": "Él es mi mundo 💗🌎",
@@ -22,6 +24,7 @@
 		"posts": []
 	},
 	{
+		"id": 2,
 		"name": "Leonardo Villalobos",
 		"username": "villaleobos",
 		"bio": "Hey there! I'm a software engineer living in California 🐻.",
@@ -31,16 +34,19 @@
 		"numFollowing": 99,
 		"highlights": [
 			{
+				"id": 0,
 				"highlightName": "🌱",
 				"imageName": "NatureStoryThumbnail"
 			},
 			{
+				"id": 1,
 				"highlightName": "☀️22",
 				"imageName": "Summer22StoryThumbnail"
 			}
 		],
 		"posts": [
 			{
+				"id": 0,
 				"locationName": "Salinas Sports Complex",
 				"imageName": "Post18",
 				"usersLiked": [
@@ -50,6 +56,7 @@
 				"caption": "Graduation has been the best day of my life ❤️ I'm grateful for my friends and family for being very supportive and accepting me for who I am 🫶🏼 I love you all!"
 			},
 			{
+				"id": 1,
 				"locationName": "California State University, Monterey Bay",
 				"imageName": "Post17",
 				"usersLiked": [
@@ -58,18 +65,21 @@
 				"caption": "It's ubelieveable that after 3 short years, I'm completely finished with school! 📚🧡 I had the opportunity to work with amazing people on an awesome project utilizing OpenAI 🧠 Next up: finding a job!"
 			},
 			{
+				"id": 2,
 				"locationName": "Fort Ord",
 				"imageName": "Post16",
 				"usersLiked": [],
 				"caption": "The last time we hiked here together was when we all met in person for the first time 💚"
 			},
 			{
+				"id": 3,
 				"locationName": "Alcatraz Federal Prison",
 				"imageName": "Post15",
 				"usersLiked": [],
 				"caption": "Alcatraz trip today 🥰"
 			},
 			{
+				"id": 4,
 				"locationName": "Mission San Juan Bautista",
 				"imageName": "Post14",
 				"usersLiked": [],

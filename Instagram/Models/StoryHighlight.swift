@@ -9,7 +9,7 @@ import Foundation
 
 struct StoryHighlight: Identifiable, Codable {
 	
-	var id: Int { "\(highlightName)@\(imageName)".hashValue }
+	var id: UInt
 	var highlightName: String
 	var imageName: String
 	
