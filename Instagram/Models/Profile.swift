@@ -20,16 +20,4 @@ struct Profile: Codable, Identifiable {
 	var highlights: [StoryHighlight]
 	var posts: [Post]
 	
-	static let `default`: Self = .init(
-		id: 0,
-		name: "John Appleseed",
-		username: .init("jappleseed"),
-		bio: "Hello, world!",
-		bioLink: "apple.com",
-		numFollowers: 0,
-		numFollowing: 0,
-		highlights: [],
-		posts: []
-	)
-	
 }
