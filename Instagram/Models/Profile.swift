@@ -14,7 +14,7 @@ struct Profile: Codable, Identifiable {
 	var username: String
 	var bio: String
 	var bioLink: String?
-	var numPosts: Int64
+	var numPosts: Int64 { .init(posts.count) }
 	var numFollowers: Int64
 	var numFollowing: Int64
 	var highlights: [StoryHighlight]
@@ -26,7 +26,6 @@ struct Profile: Codable, Identifiable {
 		username: .init("jappleseed"),
 		bio: "Hello, world!",
 		bioLink: "apple.com",
-		numPosts: 0,
 		numFollowers: 0,
 		numFollowing: 0,
 		highlights: [],
