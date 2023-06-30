@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WebKit
 
 struct ProfileBio: View {
 	
@@ -19,19 +20,21 @@ struct ProfileBio: View {
 					.font(.subheadline)
 				Text(database.current.bio)
 					.font(.footnote)
-				HStack {
-					Image(systemName: "link")
-						.font(.callout)
-						.bold()
-					Button {
-						// Link
-					} label: {
-						Text(database.current.bioLink ?? "")
-							.font(.footnote)
+				
+				if let link = database.current.bioLink {
+					HStack {
+						Image(systemName: "link")
+							.font(.callout)
+							.bold()
+						Link(destination: URL(string: link)!) {
+							Text(link)
+								.font(.footnote)
+						}
 					}
+					.foregroundColor(.link)
+					.padding(.vertical, 5)
 				}
-				.foregroundColor(.link)
-				.padding(.vertical, 5)
+				
 			}
 			Spacer()
 		}
