@@ -21,13 +21,13 @@ struct ProfileBio: View {
 				Text(database.current.bio)
 					.font(.footnote)
 				
-				if let link = database.current.bioLink {
+				if let url = database.current.profileUrl {
 					HStack {
 						Image(systemName: "link")
 							.font(.callout)
 							.bold()
-						Link(destination: URL(string: link)!) {
-							Text(link)
+						Link(destination: url) {
+							Text(url.description)
 								.font(.footnote)
 						}
 					}
