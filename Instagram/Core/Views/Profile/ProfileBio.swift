@@ -10,14 +10,7 @@ import SwiftUI
 struct ProfileBio: View {
 	
 	@EnvironmentObject var database: Database
-	
-	let rainbowColors: [Color] = [.red, .yellow, .mint]
-	
-	var isPrideMonth: Bool {
-		let components = Calendar.current.dateComponents([.month], from: .now)
-		return components.month! == 6
-	}
-	
+
 	var body: some View {
 		HStack {
 			VStack(alignment: .leading, spacing: 3) {
@@ -26,20 +19,6 @@ struct ProfileBio: View {
 					.font(.subheadline)
 				Text(database.current.bio)
 					.font(.footnote)
-				
-				HStack {
-					Text("#pride")
-						.bold()
-						.font(.footnote)
-						.foregroundStyle(.linearGradient(
-							colors: isPrideMonth ? rainbowColors : [.link],
-							startPoint: .leading,
-							endPoint: .trailing)
-						)
-						.padding(.bottom, 5)
-				}
-				.padding(.vertical, 5)
-				
 				HStack {
 					Image(systemName: "link")
 						.font(.callout)
